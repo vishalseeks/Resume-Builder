@@ -1,0 +1,49 @@
+.logo {
+    content: url('../../../assets/images/resume-logo.png');
+    max-width: 50px;
+  }
+
+  .logo_text{
+      margin-inline-start: 10px;
+      align-items: center;
+  }
+
+  .content_wrapper{
+    padding: 2vw 4.167vw;
+  }
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-nav .nav-item .active {
+    color: #0068b5 !important;
+    box-shadow: inset 0 -7px 0 -1px #0068b5;
+  }
+  /* First Navigation */
+  .first_nav {
+    background-color: #004a86;
+    padding-right: 4.167vw;
+  }
+  .first_nav a {
+    color: white !important;
+    font-size: 14px;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  @media only screen and (max-width: 991px) {
+    .navbar {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .navbar-toggler {
+      margin-right: 1.3em;
+    }
+    .second_nav {
+      display: none;
+    }
+    .navbar-nav .nav-item .active {
+      color: #0068b5;
+      box-shadow: inset 7px 0 0 -1px #0068b5;
+    }
+  }

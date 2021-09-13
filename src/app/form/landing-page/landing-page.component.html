@@ -1,0 +1,42 @@
+<div>
+    <!-- Navbar Coding Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark first_nav">
+        <a class="navbar-brand">
+            <img class="logo" alt="Resume Logo" />
+            <span class="logo_text">Resume Builder</span>
+        </a>
+    </nav>
+
+    <!-- Navbar Coding Ends -->
+
+    <div class="content_wrapper">
+        <h2>Welcome To Resume Builder Application</h2>
+        <div>Here we build Resume Format for you to download where you will be providing the input and we will be giving the format</div>
+        <div>But, before proceeding Please enlighten us with you experience level:
+            <input type="radio" id="fresher" name="formFormat" (change)="getExperienceLevel('fresher')">
+            <label for="fresher">&nbsp; I am a fresher&nbsp;</label>
+            <input type="radio" id="experience" name="formFormat" (change)="getExperienceLevel('experienced')">
+            <label for="experience">&nbsp; I am experienced&nbsp;</label>
+
+        </div>
+
+        <div *ngIf="formSelector==='fresher'">
+            <form action="">
+                <span class="btn btn-primary">Hello Mr fresher</span> 
+                <span>Please Provide me your details:</span> 
+
+            </form>
+        </div>
+        <div *ngIf="formSelector==='experienced'"> 
+            <form action="">
+                <span class="btn btn-primary">Hello Mr experienced</span> 
+                <span>Please Provide me your details:</span> 
+
+            </form>
+        </div>
+    </div>
+
+    
+
+
+    </div>
